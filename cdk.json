@@ -3,10 +3,11 @@
   "context": {
     "account": "455982475279",
     "region": "us-east-1",
-    "app_path": "/Users/miguel/Documents/abuelito-abuelito",
     "container_port": 3000,
     "cpu": 256,
     "memory_mib": 512,
-    "desired_count": 1
+    "desired_count": 1,
+    "repository_name": "abuelito-web",
+    "image_tag": "latest"
   }
 }
