@@ -57,10 +57,6 @@ class AbuelitoInfraStack(Stack):
             cpu=cpu,
             memory_limit_mib=memory_mib,
             assign_public_ip=True,
-            runtime_platform=ecs.RuntimePlatform(
-                cpu_architecture=ecs.CpuArchitecture.ARM64,
-                operating_system_family=ecs.OperatingSystemFamily.LINUX
-            ),
             task_image_options=ecs_patterns.ApplicationLoadBalancedTaskImageOptions(
                 image=ecs.ContainerImage.from_ecr_repository(repository, tag=image_tag),
                 container_port=container_port,
